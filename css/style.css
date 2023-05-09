@@ -367,6 +367,8 @@ a:hover {
 :root{
   font-size: 16;
 }
+
+
 /* footer siempre abajo */
 html{
   height: 100%;
@@ -381,6 +383,8 @@ footer{
   margin-top: auto;
 }
 /* ------------------------------ */
+
+
 a{
   text-decoration: none;
   color: #000;
@@ -516,6 +520,24 @@ h2 {
 .sec__div h2{
   padding: 15px;
   margin-bottom: 20px;
+}
+.container_c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em  ;
+}
+.art{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em ;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.art p , .art h3 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* --------------------- */
