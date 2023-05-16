@@ -1,0 +1,50 @@
+main{
+    margin-bottom: 1em;
+}
+.prin{
+    display: grid;
+    &__div{
+        @extend%flex-around;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+    &_sec{
+        width: 100%;
+        overflow: hidden;
+    }
+    &__a{
+        @extend%flex-centrado;
+        place-content: center;
+        transition: all 1s ease-in-out;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 1s ease-in-out;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .contenedor-text{
+        @extend %flex-columna-alineada;
+        overflow: hidden;
+        &__titulo{
+            font-size: 90px;
+            -webkit-text-stroke: 4px nth($color,1);
+            margin: 0;
+            text-align: center;
+        }
+        &__parrafo{
+            font-size: 40px;
+            -webkit-text-stroke: 3px nth($color,1);
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

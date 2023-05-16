@@ -1,0 +1,33 @@
+.carousel-indicators li{
+    background-color: #09090b;
+  }
+  .carousel-indicators .active {
+    background-color: #17FD03;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .carousel-caption h3{
+    font-size: 3vw;
+    -webkit-text-stroke: 2px #09090b;
+  }
+  .carousel-caption p{
+    font-size: 2vw;
+    -webkit-text-stroke: 0.8px #09090b;
+  }
+  .servi{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .servi ul li{
+    color: #fff;
+    padding: 10px;
+  }
+  
+

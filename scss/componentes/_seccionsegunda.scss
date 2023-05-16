@@ -1,0 +1,74 @@
+.sec__div{
+    @extend %flex-columna-alineada;
+    padding-bottom: 10px;
+    & h2{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
+.titu{
+    @extend %flex-just-centrado;
+  }
+.contenedor__grid{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 1em;
+}
+
+.contacto{
+    @extend %flex-columna-centrada;
+}
+.textc{
+    @extend %flex-columna;
+    text-align: center;
+}
+.container_c{
+    @extend %flex-columna-centrada;
+    gap: 3em;
+    .art{
+        @extend %flex-columna-centrada;
+        gap: 1em ;
+        margin-left: 100px;
+        margin-right: 100px;
+        & p ,h3{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+
+}
+.tituloh2{
+    font-weight: normal  ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: none;
+    -webkit-text-stroke: 0px;
+    font-size: 1.75rem;
+    background-color: nth($color, 1);
+    color: nth($color,4);
+  }
+.formulario{
+    margin-top: 20px;
+    @extend %flex-columna-centrada;
+    & label{
+        color: nth($color,4);
+    }
+}
+.mapac{
+    @extend %flex-just-centrado;
+    width: 100%;
+    & iframe{
+        width: 100%;
+        height: 400px;
+        max-width: 800px;
+    }
+}
+.servi{
+    @extend %flex-columna-centrada;
+    text-align: center;
+    & ul,
+    & li{
+        color: nth($color,4);
+        padding: 10px;
+    }
+}

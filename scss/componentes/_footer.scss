@@ -1,0 +1,23 @@
+.pie{
+    background-color: nth($color, 2);
+    @extend %flex-around;
+    overflow: hidden;
+    &__div{
+        @extend %flex-columna-centrada;
+    }
+    &__a{
+        padding: 15px;
+        color: nth($color,4);
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover{
+            color: nth($color,5);
+        }
+    }
+    &_format{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+    .mapa{
+        margin: 1em;
+    }
+}

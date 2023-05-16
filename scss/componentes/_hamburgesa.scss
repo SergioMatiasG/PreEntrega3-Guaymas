@@ -1,0 +1,33 @@
+.fondo{
+    background-color: nth($color, 2)!important;
+    position: relative;
+    display: none;
+    bottom: 0;
+    z-index: +1;
+  }
+  .navbar-toggler{
+    border: none!important;
+  }
+  .navbar-toggler:focus{
+    outline: none;
+  }
+  .navbar-dark{
+    display: flex!important;
+    background-color: #18181B!important;
+    justify-content: center!important;
+  }
+  .nav-link{
+    padding: 10px!important;
+    color: #17FD03;
+    justify-content: center;
+  }
+  .nav-item{
+    border: 1px solid #09090b;
+    width: 100%;
+  }
+  .navbar-nav{
+    align-items: center!important;
+  }
+  .nav-link:hover{
+    color: #fff;
+  }

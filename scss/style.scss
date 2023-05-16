@@ -1,7 +1,14 @@
 @import "./base/variables";
 @import "./base/listas";
 @import "./base/extends";
+@import "./base/base";
 
 
 
 @import "./componentes/header";
+@import "./componentes/hamburgesa";
+@import "./componentes/seccionprimera";
+@import "./componentes/seccionsegunda";
+@import "./componentes/cards";
+@import "./componentes/carousel";
+@import "./componentes/footer";
