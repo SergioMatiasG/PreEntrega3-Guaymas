@@ -4,7 +4,7 @@
     & h2{
         padding: 15px;
         margin-bottom: 20px;
-        @include pantalla-baja{
+        @include breakpoint(xs){
             font-size: 27px
         }
     }
@@ -19,15 +19,15 @@
     justify-items: center;
     gap: 1em;
 
-    @include pantalla-grande{
+    @include breakpoint(xxl){
         grid-template-columns: repeat(3, auto);
     }
-    @include pantalla-media{
+    @include breakpoint(lg){
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
            
     }
-    @include pantalla-baja-media{
+    @include breakpoint(sm){
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
@@ -60,14 +60,14 @@
     text-shadow: none;
     -webkit-text-stroke: 0px;
     font-size: 1.75rem;
-    background-color: nth($color, 1);
-    color: nth($color,4);
+    background-color: $black;
+    color: $color-pt;
   }
 .formulario{
     margin-top: 20px;
     @extend %flex-columna-centrada;
     & label{
-        color: nth($color,4);
+        color: $color-pt;
     }
 }
 .mapac{
@@ -84,7 +84,7 @@
     text-align: center;
     & ul,
     & li{
-        color: nth($color,4);
+        color: $color-pt;
         padding: 10px;
     }
 }

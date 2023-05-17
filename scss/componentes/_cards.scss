@@ -1,24 +1,28 @@
-.card{
+
+.carta{
     cursor: pointer;
     box-sizing: border-box;
+
+     &__cuerpo{
+        @extend%flex-columna-centrada2;
+        
+        &__texto{
+           color: $black;
+           text-align: center;
+           text-shadow: 1px 2px 0px $color-letra;
+        }
+        &__boton{
+            color: $black;
+            background-color: $color-letra;
+            border-color: $black solid 1px;
+            &:hover{
+                color: $color-pt;
+                background-color: $black;
+                border-color: $color-letra;
+            }
+ 
+       }
 }
-.card-body{
-    @extend%flex-columna-centrada2;
-}
-.card-text{
-    color: nth($color, 1);
-    text-align: center;
-    text-shadow: 1px 2px 0px nth($color,5);
-}
-.btn-primary{
-    color: nth($color, 1);
-    background-color: nth($color, 5);
-    border: nth($color, 1) solid 1px;
-    &:hover{
-        color: nth($color,4);
-        background-color: nth($color,1);
-        border-color: nth($color,5);
-    }
 }
 .cimg{
     width: 300px;

@@ -1,14 +1,30 @@
 .carousel-indicators{
-  @include pantalla-baja-media{
-      display: none;
-  }
+  @include breakpoint(sm){
+          display: none;
+        }
  }
 .carousel-indicators li{
-    background-color: #09090b;
+    background-color: $black;
   }
-  .carousel-indicators .active {
-    background-color: #17FD03;
+.carousel-indicators .active {
+    background-color: $color-letra;
   }
+
+
+  .ocultart{
+    @include breakpoint(xl){
+      display: none;
+    }
+  }
+  .ocultar{
+    @include breakpoint(md){
+      display: none;
+    }
+  }
+
+
+
+  // ------------------- carrusel de servicios
   .carousel-caption {
     position: absolute;
     top: 50%;
@@ -17,34 +33,14 @@
     text-align: center;
   }
   .carousel-caption h3{
-    font-size: 3vw;
-    -webkit-text-stroke: 2px #09090b;
-    @include pantalla-baja-media{
+    font-size: nth($FZ-VW,5);
+    -webkit-text-stroke: 2px $negrita;
+    @include breakpoint(sm){
       font-size: 20px;
     }
   }
   .carousel-caption p{
-    font-size: 2vw;
-    -webkit-text-stroke: 0.8px #09090b;
-  }
-  .servi{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  .servi ul li{
-    color: #fff;
-    padding: 10px;
-  }
-  .ocultart{
-    @include pantalla-media-grande{
-      display: none;
-    }
-  }
-  .ocultar{
-    @include pantalla-baja-alta{
-      display: none;
-    }
+    font-size: nth($FZ-VW, 3);
+    -webkit-text-stroke: 0.8px $negrita;
   }
 

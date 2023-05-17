@@ -7,7 +7,7 @@ main{
         @extend%flex-around;
         overflow: hidden;
         margin-bottom: 1em;
-        @include pantalla-media-baja{
+        @include breakpoint(l){
             display: flex;
             flex-direction: column;
         }
@@ -40,25 +40,25 @@ main{
         overflow: hidden;
         &__titulo{
             font-size: 90px;
-            -webkit-text-stroke: 4px nth($color,1);
+            -webkit-text-stroke: 4px $black;
             margin: 0;
             text-align: center;
-            @include pantalla-baja-media{
-                font-size: 12vw ;
+            @include breakpoint(sm){
+                font-size: nth($FZ-VW,7);
             }
-            @include pantalla-baja{
+            @include breakpoint(xs){
                 font-size: 45px;
             }
         }
         &__parrafo{
             font-size: 40px;
-            -webkit-text-stroke: 3px nth($color,1);
+            -webkit-text-stroke: 3px $black;
             margin: 0;
             text-align: center;
-            @include pantalla-baja-media{
-                font-size: 8vw ;
+            @include breakpoint(sm){
+                font-size: nth($FZ-VW,6);
             }
-            @include pantalla-baja{
+            @include breakpoint(xs){
                 display: none;
             }
         }

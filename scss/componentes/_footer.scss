@@ -1,20 +1,20 @@
 .pie{
-    background-color: nth($color, 2);
+    background-color: $bg-logo;
     @extend %flex-around;
     overflow: hidden;
     &__div{
         @extend %flex-columna-centrada;
-        @include pantalla-media {
+        @include breakpoint(lg){
             width: 100%;
-            border-top: 1px solid #000;
+            border-top: 1px solid $black;
         }
     }
     &__a{
         padding: 15px;
-        color: nth($color,4);
+        color: $color-pt;
         font-family: Arial, Helvetica, sans-serif;
         &:hover{
-            color: nth($color,5);
+            color: $color-letra;
         }
     }
     &_format{
@@ -24,7 +24,7 @@
     .mapa{
         margin: 1em;
     }
-    @include pantalla-media{
+    @include breakpoint(lg){
         display: flex;
         flex-direction: column;
         align-items: center;

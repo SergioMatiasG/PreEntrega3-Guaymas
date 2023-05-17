@@ -1,35 +1,8 @@
-@mixin pantalla-grande{
-    @media screen and (max-width:1334px){
-        @content;  
-    }
-}
-@mixin pantalla-media-grande{
-    @media screen and (max-width:1200px){
-        @content;  
-    }
-}
-@mixin pantalla-media{
-    @media screen and (max-width:1024px){
-        @content;  
-    }
-}
-@mixin pantalla-media-baja{
-    @media screen and (max-width:912px){
-        @content;  
-    }
-}
-@mixin pantalla-baja-alta{
-    @media screen and (max-width:820px){
-        @content;  
-    }
-}
-@mixin pantalla-baja-media{
-    @media screen and (max-width:766px){
-        @content;  
-    }
-}
-@mixin pantalla-baja{
-    @media screen and (max-width:280x){
-        @content;  
-    }
-}
+@mixin breakpoint($size) {
+    @if map-has-key($breakpoints, $size) {
+      @media (max-width: #{map-get($breakpoints, $size)}) {
+              @content;
+          }
+      }
+  }
+  

@@ -1,10 +1,22 @@
-.contenedor-text__titulo {
-    font-size: 90px;
-    -webkit-text-stroke: 4px black;
-    margin: 0;
-  }
-  .contenedor-text__parrafo {
-    font-size: 40px;
-    -webkit-text-stroke: 3px black;
-    margin: 0;
-  }
+
+$breakpoints:(
+  xs: 280px,
+  sm: 766px,
+  md: 820px,
+  l : 912px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl:1335px
+);
+$titulos:(
+    centrado: center,
+    tamaño: 40px,
+    tamaño-espacio: 900,
+    color-fondo: #18181B,
+    radio: 12px,
+    pad: 7px,
+    FF: 'BatmanForeverAlternate' sans-serif,
+    co: #fff,
+    TS: 1px 2px 0px #17FD03,
+    sombreado: 2px #18181B
+);

@@ -1,44 +1,48 @@
-.fondo{
-    background-color: nth($color, 2)!important;
+.hamburgesa{
     position: relative;
     display: none;
     bottom: 0;
     z-index: +1;
-    @include pantalla-baja-media{
+    @include breakpoint(sm){
       display: block;
     }
-  }
-  .navbar-toggler{
-    border: none!important;
-  }
-  .navbar-toggler:focus{
-    outline: none;
-  }
-  .navbar-dark{
-    display: flex!important;
-    background-color: #18181B!important;
-    justify-content: center!important;
-  }
-  .nav-link{
-    padding: 10px!important;
-    color: #17FD03;
-    justify-content: center;
-    @include pantalla-baja-media{
-      display: flex!important ;
-      width: 100%!important;
+    &__fondo{
+      background-color: $bg-logo;
+      display: flex;
+      justify-content: center;
+        &__boton{
+          border: none;
+          padding: 0.25rem 0.75rem;
+          font-size: 1.25rem;
+          line-height: 1;
+          background-color: transparent;
+          border-radius: 0.25rem;
+          &:focus{
+            outline: none;
+          }
+        }
     }
-  }
-  .nav-item{
-    border: 1px solid #09090b;
-    width: 100%;
-  }
-  .navbar-nav{
-    align-items: center!important;
-    @include pantalla-baja-media{
-      width: 100%!important;
-      align-items: center!important;
+    &__nav{
+      align-items: center;
+      @include breakpoint(sm){
+      width: 100%;
+      align-items: center;
     }
-  }
-  .nav-link:hover{
-    color: #fff;
+    &__li{
+      border: 1px solid $color-bordes;
+      width: 100%;
+      &__a{
+        padding: 10px;
+        color: $color-letra;
+        justify-content: center;
+        @include breakpoint(sm){
+          display: flex;
+          width: 100%;
+        }
+        &:hover{
+          color: $color-pt;
+        }
+      }
+    }
+    }
   }
