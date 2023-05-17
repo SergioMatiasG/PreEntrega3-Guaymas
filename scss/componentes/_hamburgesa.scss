@@ -4,6 +4,9 @@
     display: none;
     bottom: 0;
     z-index: +1;
+    @include pantalla-baja-media{
+      display: block;
+    }
   }
   .navbar-toggler{
     border: none!important;
@@ -20,6 +23,10 @@
     padding: 10px!important;
     color: #17FD03;
     justify-content: center;
+    @include pantalla-baja-media{
+      display: flex!important ;
+      width: 100%!important;
+    }
   }
   .nav-item{
     border: 1px solid #09090b;
@@ -27,6 +34,10 @@
   }
   .navbar-nav{
     align-items: center!important;
+    @include pantalla-baja-media{
+      width: 100%!important;
+      align-items: center!important;
+    }
   }
   .nav-link:hover{
     color: #fff;

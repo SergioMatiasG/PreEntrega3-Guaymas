@@ -454,67 +454,18 @@ main{
     display: flex;
     flex-direction: column;
   }
-  .ul__boton{
-    display: none;
-  }
-  .ul{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
- .nav__a{
-  font-size: 2.5vw;
-}
- .pie{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
- .pie__div{
-  width: 100%;
-  border-top: 1px solid #000;
-}
 }
 @media screen and (max-width: 820px){
-  .ul__boton{
-    display: none;
-  }
-  .ul{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
- .nav__a{
-  font-size: 2.5vw;
-}
- .pie{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
- .pie__div{
-  width: 100%;
-  border-top: 1px solid #000;
-}
-.prin__div{
-  display: flex;
-  flex-direction: column;
-}
+
 .ocultar{
   display: none;
 } 
 }
 
 @media screen and (max-width: 766px) {
-  .ocultar{
-    display: none;
-  } 
+
   .nav__ul{
     display: none;
-  }
-  .prin__div{
-    display: flex;
-    flex-direction: column;
   }
   .contenedor__text h3{
     font-size: 12vw ;
@@ -525,23 +476,7 @@ main{
   h2{
     font-size: 8vw;
   }
-  .pie{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .pie__div{
-    width: 100%;
-    border-top: 1px solid #000;
-  }
- .ul__boton{
-  display: none;
- }
- .ul{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
+
  .fondo{
   display: block;
  }

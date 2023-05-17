@@ -7,6 +7,10 @@ main{
         @extend%flex-around;
         overflow: hidden;
         margin-bottom: 1em;
+        @include pantalla-media-baja{
+            display: flex;
+            flex-direction: column;
+        }
     }
     &_sec{
         width: 100%;
@@ -39,12 +43,24 @@ main{
             -webkit-text-stroke: 4px nth($color,1);
             margin: 0;
             text-align: center;
+            @include pantalla-baja-media{
+                font-size: 12vw ;
+            }
+            @include pantalla-baja{
+                font-size: 45px;
+            }
         }
         &__parrafo{
             font-size: 40px;
             -webkit-text-stroke: 3px nth($color,1);
             margin: 0;
             text-align: center;
+            @include pantalla-baja-media{
+                font-size: 8vw ;
+            }
+            @include pantalla-baja{
+                display: none;
+            }
         }
     }
 }

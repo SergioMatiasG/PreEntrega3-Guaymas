@@ -1,3 +1,8 @@
+.carousel-indicators{
+  @include pantalla-baja-media{
+      display: none;
+  }
+ }
 .carousel-indicators li{
     background-color: #09090b;
   }
@@ -14,6 +19,9 @@
   .carousel-caption h3{
     font-size: 3vw;
     -webkit-text-stroke: 2px #09090b;
+    @include pantalla-baja-media{
+      font-size: 20px;
+    }
   }
   .carousel-caption p{
     font-size: 2vw;
@@ -29,5 +37,14 @@
     color: #fff;
     padding: 10px;
   }
-  
+  .ocultart{
+    @include pantalla-media-grande{
+      display: none;
+    }
+  }
+  .ocultar{
+    @include pantalla-baja-alta{
+      display: none;
+    }
+  }
 
