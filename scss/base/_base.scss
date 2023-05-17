@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'BatmanForeverAlternate', sans-serif;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 html{
     height: 100%;
 }
