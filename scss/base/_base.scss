@@ -26,7 +26,7 @@ a:hover{
 ul{
     list-style: none;
 }
-h1{
+.tituloh1{
     text-align: map-get($titulos,centrado);
     font-size: map-get($titulos,tamaño);
     font-weight: map-get($titulos,tamaño-espacio);
@@ -41,7 +41,7 @@ h1{
       font-size: nth($FZ-VW,8);
     }
   }
-h2 {
+.tituloh2{
   text-align: map-get($titulos,centrado);
   font-size: map-get($titulos,tamaño);
   font-weight: map-get($titulos,tamaño-espacio);
@@ -55,12 +55,20 @@ h2 {
   @include breakpoint(sm){
     font-size: nth($FZ-VW,9);
   }
+    @include breakpoint(xs){
+    font-size: nth($FZ-VW,8);
+  }
 }
-h3, p {
+.tituloh3b, p{
     color: map-get($titulos,co);
   }
-h5{
+.tituloh3{
   color: map-get($titulos,co);
   text-shadow: map-get($titulos,TS);
   -webkit-text-stroke: map-get($titulos,sombreado);
+}
+p{
+  @include breakpoint(xs){
+    font-size: nth($FZ-VW,10);
+  }
 }

@@ -9,9 +9,6 @@
         }
     }
 }
-.titu{
-    @extend %flex-just-centrado;
-  }
 .contenedor__grid{
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -54,7 +51,7 @@
       }
 
 }
-.tituloh2{
+.titulosecundario{
     font-weight: normal  ;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: none;

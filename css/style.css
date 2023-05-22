@@ -13,7 +13,7 @@
   justify-content: space-around;
 }
 
-.mapac, .titu {
+.mapac {
   display: flex;
   justify-content: center;
 }
@@ -72,7 +72,7 @@ ul {
   list-style: none;
 }
 
-h1 {
+.tituloh1 {
   text-align: center;
   font-size: 40px;
   font-weight: 900;
@@ -85,12 +85,12 @@ h1 {
   -webkit-text-stroke: 2px #18181B;
 }
 @media (max-width: 766px) {
-  h1 {
-    font-size: 7.9;
+  .tituloh1 {
+    font-size: 7.9vw;
   }
 }
 
-h2 {
+.tituloh2 {
   text-align: center;
   font-size: 40px;
   font-weight: 900;
@@ -103,19 +103,30 @@ h2 {
   -webkit-text-stroke: 2px #18181B;
 }
 @media (max-width: 766px) {
-  h2 {
-    font-size: 7;
+  .tituloh2 {
+    font-size: 7.8vw;
+  }
+}
+@media (max-width: 320px) {
+  .tituloh2 {
+    font-size: 7.9vw;
   }
 }
 
-h3, p {
+.tituloh3b, p {
   color: #fff;
 }
 
-h5 {
+.tituloh3 {
   color: #fff;
   text-shadow: 1px 2px 0px #17FD03;
   -webkit-text-stroke: 2px #18181B;
+}
+
+@media (max-width: 320px) {
+  p {
+    font-size: 15px;
+  }
 }
 
 .header {
@@ -294,6 +305,7 @@ main {
   overflow: hidden;
 }
 .prin .contenedor-text__titulo {
+  color: #fff;
   font-size: 90px;
   -webkit-text-stroke: 4px #000;
   margin: 0;
@@ -304,12 +316,13 @@ main {
     font-size: 12vw;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 320px) {
   .prin .contenedor-text__titulo {
     font-size: 45px;
   }
 }
 .prin .contenedor-text__parrafo {
+  color: #fff;
   font-size: 40px;
   -webkit-text-stroke: 3px #000;
   margin: 0;
@@ -320,7 +333,7 @@ main {
     font-size: 8vw;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 320px) {
   .prin .contenedor-text__parrafo {
     display: none;
   }
@@ -333,7 +346,7 @@ main {
   padding: 15px;
   margin-bottom: 20px;
 }
-@media (max-width: 280px) {
+@media (max-width: 320px) {
   .sec__div h2 {
     font-size: 27px;
   }
@@ -380,7 +393,7 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.tituloh2 {
+.titulosecundario {
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: none;
@@ -417,6 +430,12 @@ main {
 .carta {
   cursor: pointer;
   box-sizing: border-box;
+}
+.carta__cuerpo__titulo {
+  font-size: 1.25rem;
+  color: #fff;
+  text-shadow: 1px 2px 0px #17FD03;
+  -webkit-text-stroke: 2px #18181B;
 }
 .carta__cuerpo__texto {
   color: #000;
@@ -507,6 +526,7 @@ main {
   color: #17FD03;
 }
 .pie_format {
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
 }

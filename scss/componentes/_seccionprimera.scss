@@ -39,6 +39,7 @@ main{
         @extend %flex-columna-alineada;
         overflow: hidden;
         &__titulo{
+            color: map-get($titulos,co);
             font-size: 90px;
             -webkit-text-stroke: 4px $black;
             margin: 0;
@@ -51,6 +52,7 @@ main{
             }
         }
         &__parrafo{
+            color: map-get($titulos,co);
             font-size: 40px;
             -webkit-text-stroke: 3px $black;
             margin: 0;

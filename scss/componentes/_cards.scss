@@ -5,7 +5,12 @@
 
      &__cuerpo{
         @extend%flex-columna-centrada2;
-        
+        &__titulo{
+            font-size: 1.25rem;
+            color: map-get($titulos,co);
+            text-shadow: map-get($titulos,TS);
+            -webkit-text-stroke: map-get($titulos,sombreado);
+        }
         &__texto{
            color: $black;
            text-align: center;
