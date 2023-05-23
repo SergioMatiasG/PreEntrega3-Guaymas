@@ -117,6 +117,11 @@
         }
     }
 }
+.sesion{
+    @include breakpoint(lg){
+        display: none;
+    }
+}
 .boton{
     color: black;
     background-color: #17FD03;
@@ -130,7 +135,6 @@
         box-shadow: 0 0 0 0.2rem black;
     }
 }
-
 
 @keyframes btn-anim1{
     0%{

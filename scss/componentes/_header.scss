@@ -23,16 +23,8 @@
         &__a{
             background-color:$color-pt;
         }
-        &__boton{
-            @extend %flex-centrado;
-            background-color:$bg-gris;
-            border: none;
-            color:$color-letra;
-            font-size: nth($FZ-VW,2);
-            -webkit-text-stroke: 1px $color-bordes;
-            border-radius: 10px;
-            padding: 5px;
-            @include breakpoint(lg){
+        .boton{
+            @include breakpoint(sm){
                 display: none;
             }
 
@@ -41,6 +33,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            .boton{
+                margin-top: 1em;
+            }
         }
 
     }
