@@ -30,10 +30,33 @@
                 <img class="buscador_i" src="../img/icons8-búsqueda-30-2.png" alt="buscador">
             </li>
             <li class="ul__element sesion">
-                <button class="ul__boton">
-                    <img src="../img/icons8-usuario-de-género-neutro-30.png" alt="usuario">
-                    Iniciar sesion
-                </button>
+                <button type="button" class="btn boton" data-toggle="modal" data-target="#exampleModalCenter">Iniciar Sesión</button>
+  
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered"></div>
+                  <div class="login-box">
+                      <h2 >¡Bienvenidos!</h2>
+                      <form>
+                          <div class="user-box">
+                              <input type="text" name="" required="">
+                              <label>Usuario</label>
+                          </div>
+                          <div class="user-box">
+                              <input type="password" name="" required="">
+                              <label>Contraseña</label>
+                          </div>
+                          <p>No tenes cuenta?  <a href="#">Registrate</a></p>
+                          <p>te olvidaste la contraseña?  <a href="#">Recuperarla</a></p>
+                          <a class="ingre" href="../index.html">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              Ingresar
+                          </a>
+                      </form>
+                  </div>
+                </div>
             </li>
         </ul>
         <nav class="nav">
